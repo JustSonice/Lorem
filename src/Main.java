@@ -22,13 +22,13 @@ public class Main {
             Integer charMax1 = Collections.max(text.values());
             Integer charMin1 = Collections.min(text.values());
             for (Character key : collection) {
-                Object kek = text.get(key);
+                Object check = text.get(key);
                 if (key != null) {
-                    if (charMin1.equals(kek)) {
+                    if (charMin1.equals(check)) {
                         Character ok = key;
                         System.out.println("Реже всего встречалась буква: "+ ok + ". Она встречалась: " + charMin1 + " раз.");
                     }
-                    if (charMax1.equals(kek)) {
+                    if (charMax1.equals(check)) {
                         Character ok = key;
                         System.out.println("Чаще всего встречалась буква: "+ ok + ". Она встречалась: " + charMax1 + " раз.");
                     }
